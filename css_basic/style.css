@@ -7,14 +7,17 @@ main {
 	display: flex;
 	flex-direction: row;
 	flex: auto;
+	border: 1px solid black;
 }
 
 article {
 	flex: 2;
-	overflow-y: auto
+	overflow-y: auto;
+	border: 1px solid black;
 }
 
 aside {
 	flex: 1;
-	overflow-y: auto
+	overflow-y: auto;
+	border: 1px solid black;
 }
