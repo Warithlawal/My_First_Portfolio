@@ -1,0 +1,323 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Source Sans 3", sans-serif;
+}
+
+header {
+	background: url("./images/Object.png") center/cover no-repeat;
+	height: 800px;
+	margin-bottom: 80px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 29.46px;
+	padding: 30px 10% ;
+}
+
+nav img {
+	width: 161px;
+}
+
+nav ul {
+	display: flex;
+	gap: 20px;
+	list-style-type: none;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: #FF6565;
+}
+
+nav ul li a:active {
+	color: #FF6565;
+}
+
+.banner {
+	text-align: center;
+	color: #ffffff;
+	margin: 300px auto;
+	width: 637px;
+}
+
+.banner h1 {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.banner p:nth-child(2) {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.banner button {
+	background-color: #FF6565;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 50px;
+	margin: 40px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+.banner p:last-child {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.what-to-do {
+	text-align: center;
+	width: 637px;
+	margin: auto;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.what-to-do h2 {
+	margin-bottom: 40px;
+}
+
+.what-to-do-content {
+	display: grid;
+	grid-template-columns: 207px 207px 207px 207px;
+	align-items: center;
+	justify-content: center;
+	margin: 80px 0;
+	text-align: center;
+	gap: 50px;
+	line-height: 26px;
+}
+
+.what-to-do-content img {
+	margin-bottom: 20px;
+}
+
+.what-to-do-content h2 {
+	font-size: 18px;
+}
+
+.what-to-do-content p {
+	font-size: 14px;
+}
+
+.results {
+	background: url("./images/headphones_hero_2.jpg") center/cover no-repeat;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 650px;
+	text-align: center;
+	color: white;
+	display: grid;
+}
+
+.results-content {
+	margin: auto;
+}
+
+.resultsh1{
+	margin-bottom: 50px;
+}
+
+.resultsp{
+	width: 637px;
+	margin: 0 auto 50px;
+}
+
+.pentagone {
+	display: grid;
+	grid-template-columns: 190px 190px 190px 190px;
+	gap: 60px;
+	align-items: center;
+	justify-content: center;
+}
+
+.pentagone img {
+	width: 170px;
+	height: 170px;
+}
+
+.pentagone-container {
+	position: relative;
+}
+
+.pentagone-content {
+	position: absolute;
+	top: 70px;
+	left: 50px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+	width: 335px;
+	margin: 100px auto;
+	justify-content: center;
+	text-align: center;
+}
+
+.contact h1 {
+	margin-bottom: 20px;
+}
+
+.contact button {
+	background-color: #FF6565;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 50px;
+	margin: 40px auto 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  width: 335px;
+}
+
+input[type=email] {
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  width: 335px;
+}
+
+form {
+	text-align: left;
+}
+
+.footer-container {
+	text-align: center;
+	height: 200px;
+	background-color: #071629;
+}
+
+.footer-container i {
+	background-color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 50px;
+}
+
+.footer-grid {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 80px;
+	align-items: center;
+}
+
+.footer-grid img {
+	width: 161px;
+}
+
+.footer-container p {
+	font-size: 12px;
+	padding-top: 40px;
+	color: #FFFFFF;
+}
+
+.icons {
+	display: flex;
+	gap: 20px;
+}
+
+
+@media only screen and (max-width: 787px) {
+
+	.results {
+		height: 876px;
+}
+
+header {
+		height: 869px;
+		background: url("./images/Object.png") center/cover no-repeat;
+		margin-bottom: 80px;
+	}
+
+	.what-to-do-content {
+		grid-template-columns: 207px 207px;
+}
+
+  .pentagone {
+		grid-template-columns: 190px 190px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	nav ul{
+		display: noe;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	nav {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+
+	.what-to-do-content {
+		grid-template-columns: 207px;
+}
+
+  .pentagone {
+		grid-template-columns: 190px;
+	}
+
+	header {
+		height: 869px;
+		background: url("./images/Object.png") center/cover no-repeat;
+		margin-bottom: 80px;
+	}
+
+	.results {
+		height: 1491px;
+		width: 100%;
+		background-color: #071629;
+	}
+
+	.resultsp{
+		width: 357px;
+	}
+
+	.banner {
+		width: 357px;
+		height: 436px;
+	}
+
+	.what-to-do {
+		width: 357px;
+	}
+
+	.footer-container {
+		height: 249px;
+	}
+
+	.footer-grid {
+		flex-direction: column;
+		gap: 20px;
+	}
+}
